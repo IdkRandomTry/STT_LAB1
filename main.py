@@ -1,20 +1,24 @@
-import os,sys
+"""Simple program to demonstrate pylint compliance."""
 
-x = 10
-y=20  # bad spacing
+x_val = 10
+y_val = 20
 
-def add(a,b): 
-  return a+b    # bad indentation
 
-def Unused(foo, bar):  # unused args 
-    temp = 42   # unused variable
-    return None
+def add(a, b):
+    """Return the sum of a and b."""
+    return a + b
+
 
 def main():
-    z = add(x,y)
-    print("Result is " + str(z))  # ok
-    if True == True:   # comparison with constant
-        print("Always true")
-    for i in range(5):
-        print("hello world") # unused loop variable i
-main() 
+    """Main function."""
+    z_val = add(x_val, y_val)
+    print(f"Result is {z_val}")
+
+    print("Always true")
+
+    for _ in range(5):
+        print("hello world")
+
+
+if __name__ == "__main__":
+    main()
