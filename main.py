@@ -11,7 +11,7 @@ def add(a, b):
 
 def main():
     """Main function."""
-    z_val = add(x_val, y_val)
+    z_val = add(X_VAL, Y_VAL)
     print(f"Result is {z_val}")
 
     print("Always true")
