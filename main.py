@@ -1,7 +1,7 @@
 """Simple program to demonstrate pylint compliance."""
 
-x_val = 10
-y_val = 20
+X_VAL = 10
+Y_VAL = 20
 
 
 def add(a, b):
